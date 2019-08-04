@@ -22,109 +22,78 @@ export default {
   data() {
     return {
       tree: {
-        "1": {
+        1: {
           id: 45,
           parent_id: 43,
-          name: "Pralhad",
+          name: "Babar",
+          generation: 1,
           children: [
             {
-              id: 47,
-              parent_id: 45,
-              name: "Govind",
-              generation: 26,
+              id: 45,
+              parent_id: 43,
+              name: "Humayun",
+              generation: 2,
               children: [
                 {
-                  id: 50,
-                  parent_id: 47,
-                  name: "Narhar",
-                  generation: 27,
+                  id: 45,
+                  parent_id: 43,
+                  name: "Akbar The Great",
+                  generation: 3,
                   children: [
                     {
-                      id: 54,
-                      parent_id: 50,
-                      name: "Pramod",
-                      generation: 28,
+                      id: 46,
+                      parent_id: 45,
+                      name: "Jahangir",
+                      generation: 4,
+
                       children: [
                         {
-                          id: 64,
-                          parent_id: 54,
-                          name: "Varsha",
-                          generation: 29,
+                          id: 47,
+                          parent_id: 46,
+                          name: "Khusrau Mirza",
+                          generation: 5,
+
+                          children: []
+                        },
+                        {
+                          id: 48,
+                          parent_id: 46,
+                          name: "Shah Jahan",
+                          generation: 5,
+
                           children: [
                             {
-                              id: 103,
-                              parent_id: 64,
-                              name: "Gandhar",
-                              generation: 30,
+                              id: 49,
+                              parent_id: 48,
+                              name: "Aurangzeb",
+                              generation: 6,
+
                               children: []
+                            },
+                            {
+                              id: 50,
+                              parent_id: 48,
+                              name: "Shah shuja",
+                              children: [],
+                              generation: 6
+                            },
+                            {
+                              id: 51,
+                              parent_id: 49,
+                              name: "Murad Baksh",
+                              children: [],
+                              generation: 6
                             }
                           ]
-                        },
-                        {
-                          id: 65,
-                          parent_id: 54,
-                          name: "Sushma",
-                          generation: 29,
-                          children: []
-                        },
-                        {
-                          id: 66,
-                          parent_id: 54,
-                          name: "Sampada",
-                          generation: 29,
-                          children: []
-                        },
-                        {
-                          id: 67,
-                          parent_id: 54,
-                          name: "Prachi",
-                          generation: 29,
-                          children: []
-                        },
-                        {
-                          id: 101,
-                          parent_id: 54,
-                          name: "sanket",
-                          generation: 29,
-                          children: []
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  id: 51,
-                  parent_id: 47,
-                  name: "Ganesh",
-                  generation: 27,
-                  children: []
-                },
-                {
-                  id: 52,
-                  parent_id: 47,
-                  name: "Shrinivas",
-                  generation: 27,
-                  children: [
-                    {
-                      id: 104,
-                      parent_id: 52,
-                      name: "Nilesh",
-                      generation: 28,
-                      children: []
-                    },
-                    {
-                      id: 105,
-                      parent_id: 52,
-                      name: "Shailesh",
-                      generation: 28,
-                      children: []
                     }
                   ]
                 }
               ]
             }
           ],
-          generation: 25
+          generation: 1
         }
       }
     };
@@ -145,7 +114,7 @@ body {
   padding: 0;
 }
 .tree {
-  width: 4000px;
+  width: 2000px;
   overflow-x: scroll;
 }
 .tree ul {
